@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,800&display=swap');
+body {
+    font-family: 'Tilt Prism', cursive;
+    background-color: #495371;
+}
+
+#mascota {
+    display: flex;              /* Siempre el flex va en columna y de izq a derecha por default */
+    flex-direction: column;     /* Con esto ponemos que sea en modo columna */
+    justify-content: center;    /* Centra el contenido de manera vertical (por la columna) */
+    align-items: center;        /* Centra el contenidod e manera horizontal */
+}
+
+.titulo {               /* si es una "clase", se utiliza un punto al inicio */
+    color: white;
+    font-size: 50px;
+    font-family: 'Rubik Iso', cursive;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 35px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    background-color: none ;
+    padding: 10px;
+    align-items: baseline;
+}
+
+.tarjeta-de-mokepon {
+    width: 250px;
+    height: 370px;
+    background: #93BFCF;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sono', sans-serif;
+}
+
+.tarjeta-de-mokepon img {
+    width: auto;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #EEE9DA;
+    color: white;
+    font-family: 'Righteous', cursive;
+    /*margin: 20px 0 0 0;                   cualquiera sirve, ya sea los 4 o directamente top-bottom etc*/
+    margin-top: 30px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label{
+    /* width: 100px; */
+    background-color: #B7B78A;
+}
+
+#ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: transparent;
+    width: 100%;
+    height: 250px;
+    font-family: 'Sono', sans-serif;
+    border-radius: 20px;
+    align-items: baseline;
+}
+
+#mensajes {
+    width: 280px;
+    background: #93BFCF;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: white;
+    background-color: #93BFCF;
+    font-family: 'Tilt Prism', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns:  2fr 2fr;
+
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+    .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+.tamanioavatar {
+    width: 100%;
+    height: 350px;
+}
+
+label:hover {
+    background-color: #B7B78A;
+}
+
+
+
+.ataques-jugador, .ataques-enemigo {
+    background-color: red;
+    width: 50px;
+
+}
+#vidas-jugador, #vidas-enemigo {
+    color: #2192FF;
+    font-size: 20px;
+    width: 50px;
+    background-color: orange;
+}
+#mascota-jugador, #mascota-enemigo {
+    background-color: yellow;
+    font-size: 20px;
+    width: 50px;
+}
+#ataques-Del-Jugador, #ataques-Del-Enemigo {
+    background-color: yellowgreen;
+    font-size: 20px;
+    width: 50px;
+}
+
+
